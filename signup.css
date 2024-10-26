@@ -1,0 +1,173 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  position: relative;
+  overflow: hidden;
+}
+
+.background-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.background-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+}
+
+/* Fade-in animation for the entire container */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 1.5s ease-in-out; /* Adding fade-in animation */
+}
+
+.container .inner-con {
+  height: 500px;
+  width: 450px;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container .inner-con h3 {
+  font-size: 2vw;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Floating label animation */
+.input-group {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  font-size: 1vw;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: #aaa;
+  transition: all 0.3s ease-in-out;
+  pointer-events: none;
+}
+
+input:focus ~ label,
+input:valid ~ label {
+  top: -20px;
+  font-size: 0.8vw;
+  color: #fff;
+}
+
+/* Input border animation on focus */
+.container .inner-con .email-input,
+.container .inner-con .password-input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  color: #fff;
+  border-bottom: 2px solid #fff;
+  background: transparent;
+  font-size: 1vw;
+  margin-bottom: 15px;
+  transition: border-color 0.3s ease;
+}
+
+.container .inner-con input:is(:focus, :valid) {
+  color: #fff;
+  border-bottom: 2px solid cadetblue; /* Animated border color change */
+}
+
+/* Checkbox styles */
+.container .inner-con .checkbox-label {
+  font-size: 1vw;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 20px;
+}
+
+.container .inner-con .checkbox-label input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+/* Button animation */
+.inner-con .btn {
+  padding: 15px 50px;
+  border-radius: 10px;
+  border-style: none;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  background-color: cadetblue;
+  color: #fff;
+  margin-top: 20px;
+  transition: background-color 0.3s, transform 0.2s ease;
+}
+
+/* Button hover effect */
+.inner-con .btn:hover {
+  background-color: #5f9ea0; /* Darker shade of cadetblue */
+  transform: scale(1.05); /* Slightly enlarges on hover */
+}
+
+/* Button click animation */
+.inner-con .btn:active {
+  transform: scale(0.95); /* Shrinks slightly when clicked */
+}
+
+.inner-con #line{
+  position: relative;
+  top:25px;
+  text-align: center;
+}
+
+#line a{
+  text-decoration: none;
+  color:#fff
+}
+
+#line a:hover{
+  text-decoration: underline;
+  font-style: italic;
+}
