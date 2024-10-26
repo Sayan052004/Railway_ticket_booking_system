@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reservation.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.4.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <title>Seat reservation</title>
+  </head>
+  <body>
+    <img
+      src="https://images.unsplash.com/photo-1718555517151-261879eebfad?q=80&w=1856&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    />
+
+    <div class="inner-contain">
+      <h3>Ticket Reservation</h3>
+      <div class="from">
+        <input type="text" class="start" />
+        <label for="start" id="start-label">Start from</label>
+      </div>
+      <i class="ri-arrow-up-down-fill"></i>
+      <div class="to">
+        <input type="text" class="end" />
+        <label for="end" id="destination-label">Destination</label>
+      </div>
+      <select id="time">
+        <option>Time</option>
+        <option value="am">AM</option>
+        <option value="pm">PM</option>
+      </select>
+      <div class="online-payment">
+        <input
+          type="radio"
+          id="online"
+          name="payment-method"
+          value="online-payment"
+        />
+        <label for="online">Online Payment</label>
+      </div>
+      <div class="card-payment">
+        <input
+          type="radio"
+          id="card"
+          name="payment-method"
+          value="card-payment"
+        />
+        <label for="card">Card Payment</label>
+      </div>
+      <div class="para">
+        <p id="msg"></p>
+      </div>
+      <button id="btn">Book Ticket</button>
+    </div>
+    <script src="reservation.js"></script>
+  </body>
+</html>
