@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="login.css" />
+    <title>Login</title>
+  </head>
+  <body>
+    <img
+      src="https://images.unsplash.com/photo-1515537458774-3f7b5a0265c1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      alt="background"
+    />
+    <div class="container">
+      <h3>Login</h3>
+      <div class="input-container">
+        <input type="text" class="email" id="username" required />
+        <label for="username" class="input-label">Enter username</label>
+      </div>
+      <div class="input-container">
+        <input type="password" id="password" required />
+        <label for="password" class="input-label">Enter password</label>
+      </div>
+      <label for="remember-me" class="checkbox">
+        <input type="checkbox" id="remember-me" />Remember me
+      </label>
+      <button id="btn">Login</button>
+      <p>Don't remember! <a href="#">Forgot password</a></p>
+      <p>Don't have an account? <a href="signup.html">Sign in</a></p>
+    </div>
+    <script src="login.js"></script>
+  </body>
+</html>
