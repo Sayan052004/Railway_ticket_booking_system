@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="railway.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Railway Ticket Booking</title>
+  </head>
+  <body>
+    <!-- Side bar section -->
+    <div class="sidebar">
+      <i class="fa-solid fa-building-columns"></i>
+      <h4>Career</h4>
+      <i class="ri-ticket-fill"></i>
+      <h4>Booking</h4>
+      <i class="ri-train-fill"></i>
+      <h4>Train info</h4>
+      <i class="fa-solid fa-users-line"></i>
+      <h4>Contact us</h4>
+      <i class="fa-solid fa-circle-user"></i>
+      <h4>Sign up</h4>
+      <i class="fa-solid fa-right-to-bracket"></i>
+      <h4>Login</h4>
+      <i class="fa-solid fa-xmark" id="hide"></i>
+    </div>
+    <!-- Navbar Section -->
+    <div class="nav">
+      <img src="https://images.unsplash.com/photo-1535535112387-56ffe8db21ff?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" id="bg_image">
+      <img src="railways-logo.png" id="logo" />
+      <ul>
+        <li>Career</li>
+        <li><a href="reservation.html">Reservation</a></li>
+        <li id="sign"><a href="signup.html">Sign in</a></li>
+        <li><a href="login.html">Login</a></li>
+        <i class="ri-menu-3-line" id="menu"></i>
+      </ul>
+    </div>
+    <!-- Instruction section -->
+    <div class="details">
+      <h2>Have you not found the right one?</h2>
+      <h2>Find a service suitable for you here.</h2>
+      <div class="facilites">
+        <button id="btn">HOTELS</button>
+        <button id="btn">RAIL DRISTHI</button>
+        <button id="btn">E-CATERING</button>
+        <button id="btn">HOLIDAY PACKAGES</button>
+
+        <button id="btn">TOURIST TRAIN</button>
+        <button id="btn">HILL RAILWAYS</button>
+        <button id="btn">CHARATER TRAIN</button>
+        <button id="btn">GALLERY</button>
+      </div>
+      <br />
+      <h2 id="holi">HOLIDAYS</h2>
+      <!-- Holiday list -->
+      <div class="holiday-one">
+        <div id="holi-divs">
+          <img src="https://www.irctc.co.in/nget/assets/images/exterior.jpg" />
+          <h4>Maharaja's Express</h4>
+          <p>
+            Redefining Royalty, Luxury and Comfort, Maharajas' express takes you
+            on a sojourn to the era of bygone stately splendour of princely
+            states. Sylvan furnishings, elegant ambience and modern amenities
+            are amalgamated for an “Experience Unsurpassed”. It has been a
+            winner of “World’s Leading Luxury train” by World Travel Awards
+            consecutively for last six years.
+          </p>
+          <button id="first">Read more</button>
+        </div>
+        <div id="holi-divs">
+          <img src="https://www.irctc.co.in/nget/assets/images/Thailand.jpg" />
+          <h4>International Packages</h4>
+          <p>
+            Best deals in International Holiday packages, handpicked by IRCTC,
+            for Thailand, Dubai, Sri Lanka, Hong Kong, China, Macau, Bhutan,
+            Nepal, U.K., Europe, USA, Australia etc. The packages are inclusive
+            of sightseeing, meals, visa charges and overseas medical insurance
+            to give you a hassle-free and memorable experience.
+          </p>
+          <button id="btn">Read more</button>
+        </div>
+        <div id="holi-divs">
+          <img src="https://www.irctc.co.in/nget/assets/images/Kashmir.jpg" />
+          <h4>Domestic Air Packages</h4>
+          <p>
+            Be it the spiritual devotee seeking blessings of Tirupati, Shirdi or
+            Mata Vaishno Devi or the leisure traveller wanting to relish the
+            Blue mountains of North East, Sand-dunes of Rajasthan, Hamlets of
+            Ladakh, Wonders of Himalayas, Serene lakes or Picturesque Islands,
+            IRCTC has it all. Discover India through IRCTC!
+          </p>
+          <button id="btn">Read more</button>
+        </div>
+      </div>
+      <div class="holiday-two">
+        <div id="holi-divs-two">
+          <img
+            src="https://www.irctc.co.in/nget/assets/images/Bharat_Gaurav.jpg"
+          />
+          <h4>Bharat Gaurav Tourist Train</h4>
+          <p>
+            IRCTC operates Bharat Gaurav Tourist Train having AC III-Tier
+            accommodation on train specially designed to promote domestic
+            tourism in India. This train runs on various theme based circuits
+            covering pilgrimage and heritage destinations in its itinerary on a
+            5 days to 20 days trip and showcase India’s rich cultural heritage.
+          </p>
+          <button id="btn">Read more</button>
+        </div>
+        <div id="holi-divs-two">
+          <img src="https://www.irctc.co.in/nget/assets/images/Manali.jpg" />
+          <h4>Rail Tour Packages</h4>
+          <p>
+            IRCTC offers Exclusive Rail tour packages with confirmed train
+            tickets, sight-seeing and meals for enchanting Nilgiri Mountains,
+            Darjeeling, Kullu Manali, Kashmir, Gangtok or divine tours of Mata
+            Vaishno Devi, Rameswaram, Madurai, Shirdi, Tirupati etc. Holiday
+            packages/ Land packages to these destinations are also available.
+          </p>
+          <button>Read more</button>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <div class="footer">
+      <ul>
+        <li>IRCTC Trains</li>
+        <li>General Information</li>
+        <li>Important Information</li>
+      </ul>
+
+      <ul>
+        <li>IRCTC Official Apps</li>
+        <li>Refunds Ruls</li>
+        <li>Persons with disability facilites</li>
+        <li>Policies</li>
+      </ul>
+
+      <ul>
+        <li>IRCTC Zone</li>
+        <li>Mobile Zone</li>
+        <li>About US</li>
+        <li>Follow us</li>
+      </ul>
+      <div class="logo">
+        <a href="https://www.facebook.com/RailMinIndia/"><i class="ri-facebook-circle-fill"></i></a>
+        <a href="https://www.instagram.com/railminindia/?hl=en"><i class="ri-instagram-fill"></i></a>
+        <a href="https://www.linkedin.com/company/indian-railways-new/?originalSubdomain=in"><i class="ri-linkedin-box-fill"></i></i></a>
+        <a href="https://www.youtube.com/c/MinistryofRailwaysIndia"><i class="ri-youtube-fill"></i></a>
+        <a href="https://x.com/indianrailway__?lang=en"><i class="ri-twitter-x-fill"></i></a>
+      </div>
+    </div>
+    <script src="railway.js"></script>
+  </body>
+</html>
